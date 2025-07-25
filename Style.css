@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #222;
+}
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background: #4caf50;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f4f4f4;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #4caf50;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+}
+
+.project-card {
+  background: #e8f5e9;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #4caf50;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f1f1f1;
+}
+body.dark-mode .hero {
+  background: #1e1e1e;
+}
+
+body.dark-mode .project-card {
+  background: #1c2c1f;
+ }
+
+body.dark-mode footer { 
+  background: #1c1c1c;
+}
+
+
+#toggle-theme {
+  background: transparent;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background: white;
+  color: #4caf50;
+}
+
+#courses ul, #learning ul, #education ul {
+  list-style: square;
+  margin-left: 20px;
+}
